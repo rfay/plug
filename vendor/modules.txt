@@ -1,0 +1,9 @@
+# github.com/traefik/yaegi v0.16.1
+## explicit; go 1.21
+github.com/traefik/yaegi/internal/unsafe2
+github.com/traefik/yaegi/interp
+github.com/traefik/yaegi/stdlib
+github.com/traefik/yaegi/stdlib/generic
+# gopkg.in/yaml.v3 v3.0.1
+## explicit
+gopkg.in/yaml.v3
