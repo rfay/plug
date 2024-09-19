@@ -1,9 +1,9 @@
 package main
 
 import (
+	ye "github.com/rfay/plug/ye/gopkg_in_yaml_v3"
 	"github.com/traefik/yaegi/interp"
 	"github.com/traefik/yaegi/stdlib"
-	// Import the extracted symbols package
 )
 
 func main() {
@@ -12,15 +12,15 @@ func main() {
 	// Use the standard library symbols
 	i.Use(stdlib.Symbols)
 
-	// Use the extracted yaml symbols
-	i.Use(yaml_yaegi.Symbols)
+	i.Use(ye.Symbols)
 
-	// The code to be interpreted
 	src := `
         package main
 
         import (
             yaml "gopkg.in/yaml.v3"
+			"io/ioutil"
+			"fmt"
         )
 
         func main() {
