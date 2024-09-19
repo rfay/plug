@@ -1,4 +1,4 @@
-module yaegi-test
+module github.com/rfay/plug
 
 go 1.23.1
 
